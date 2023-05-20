@@ -1,0 +1,120 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #404040;
+}
+
+.intro, 
+.main-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.main-content {
+          text-align: center;
+          justify-content: space-between;
+          padding-left: 3em;
+          padding-right: 3em;
+}
+
+.intro {
+    color: white;
+    min-height: 50px;
+    background-color: #77b194;
+    background-image: url("images/zig-zag.svg");
+    background-size: cover;
+    text-align: center;
+    justify-content: space-between;
+    padding-left: 3em;
+    padding-right: 3em;
+    padding-bottom: 1em;
+}
+
+  /* Typography */
+
+h1{
+   font-size: 2.5rem;
+   font-weight: 400;
+
+}
+
+.lower-text, .top-text { 
+    font-size: 1.5rem;
+    font-weight: 900;
+}
+
+.top-text {
+    color: white;
+    margin: 0;
+    order: -1;
+}
+
+.image {
+    margin: 0 auto;
+    width: 60%;
+    height: auto;
+}
+
+p {
+   font-size: 1.75rem;
+    color: #006633;
+}
+
+.order-text {
+       color: #006633;
+       font-weight: 900;
+       font-size: 2rem;
+}
+
+
+input {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 0.75em;
+    padding: 1em;
+    border: 1px solid grey;
+    border-radius: 5px;
+}
+
+input[type="submit"] {
+    background-color: #FDC703;
+    border: none;
+    color: white;
+    font-size: 1.25rem;
+}
+
+::placeholder {
+    font-size: 1.5rem;
+}
+
+@media(min-width: 576px) {
+    body {
+      display: flex;
+    }
+
+    h1 {
+        font-size: 5vw;
+    }
+
+    .order-text {
+        font-size: 2.25rem;
+    }
+    p {
+        font-size: 2rem;
+    }
+
+    .intro,
+    .main-content {
+        width: 50%;
+    }
+ 
+    
+  }
